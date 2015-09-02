@@ -630,7 +630,7 @@ abort		^X ^C
 abort		^C
 tw0		^X 0		Delete window: can make orphan buffers
 tw1		^X 1		Delete other windows: can make orphan buffers
-uarg		^U		Repeat prefix
+ uarg		^U		Repeat prefix
 uarg		^[ -
 uarg		^[ 0 TO 9
 help		^X ^H
@@ -922,6 +922,7 @@ nbuf		^X ^B		Next buffer in current window
 nbuf		^X x		(uemacs)
  nextpos		^K =		Goto next position in position history
 nextword	^N		Goto next word
+ nextword	
 notmod		^[ ~		Not modified
 open		^O		Split line
 open		^[ ^O
@@ -956,6 +957,7 @@ tomatch		^X g		Goto matching parenthasis (joe)
 tomatch		^[ ^F		(uemacs)
 txt		^X t		Prompt for text to insert
 undo		^_		Undo changes
+undo		^U
 undo		^X u
 uparw		.ku		Go up
  uparw		

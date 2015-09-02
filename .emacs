@@ -76,10 +76,12 @@
 ; Setup my find-files
 (define-key global-map "\ef" 'find-file) 
 (define-key global-map "\eF" 'find-file-other-window) 
- 
+(define-key global-map "\C-o" 'find-file)
+(define-key global-map "\C-O" 'find-file-other-window)
+
 (global-set-key (read-kbd-macro "\eb")  'ido-switch-buffer) 
-(global-set-key (read-kbd-macro "\eB")  'ido-switch-buffer-other-window) 
- 
+(global-set-key (read-kbd-macro "\eB")  'ido-switch-buffer-other-window)
+
 (defun casey-ediff-setup-windows (buffer-A buffer-B buffer-C control-buffer) 
   (ediff-setup-windows-plain buffer-A buffer-B buffer-C control-buffer) 
 ) 
@@ -627,9 +629,9 @@
   (interactive) 
   (menu-bar-mode -1) 
   (maximize-frame) 
-  (set-foreground-color "light grey")
+  ;;(set-foreground-color "light grey")
   (set-background-color "#060606")
-  ;;(set-foreground-color "snow3")
+  (set-foreground-color "burlywood3")
   ;;(set-foreground-color "white")
   ;;(set-background-color "#262626")
   (set-cursor-color "#40FF40") 

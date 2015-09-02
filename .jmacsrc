@@ -1,0 +1,46 @@
+:include /etc/joe/jmacsrc
+
+*.c
+-autoindent
+-syntax c
+-tab 4
+-istep 4
+-indentc 32
+-smarthome
+-smartbacks
+-purify
+-single_quoted
+-c_comment
+-cpp_comment
+-text_delimiters #if|#ifdef|#ifndef=#elif=#else=#endif
+-cpara >#!;*/%
+
+*.h
+-autoindent
+-syntax c
+-tab 4
+-istep 4
+-indentc 32
+-smarthome
+-smartbacks
+-purify
+-single_quoted
+-c_comment
+-cpp_comment
+-text_delimiters #if|#ifdef|#ifndef=#elif=#else=#endif
+-cpara >#!;*/%
+
+*.cpp
+-autoindent
+-syntax c
+-tab 4
+-istep 4
+-indentc 32
+-smarthome
+-smartbacks
+-purify
+-single_quoted
+-c_comment
+-cpp_comment
+-text_delimiters #if|#ifdef|#ifndef=#elif=#else=#endif
+-cpara >#!;*/%
